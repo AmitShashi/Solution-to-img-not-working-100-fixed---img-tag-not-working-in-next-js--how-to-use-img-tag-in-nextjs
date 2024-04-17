@@ -22,48 +22,50 @@ export default function Home() {
           <Image
             src="/image.png" // replace with your image path
             alt="method-1"
-            width={200}  
-            height={200}  
+            width={200}
+            height={200}
           />
         </div>
 
         {/* Method: 2.>-------------------------------------------------------------------- */}
 
         <div className='border border-red-500'>
-          <picture>
-            <source srcSet="https://picsum.photos/200" type="image/jpg" />
-            <img
-              src="https://picsum.photos/200" // replace with your image path
-              alt="method-2"
-              width="200"  
-              height="200"  
-            />
-          </picture>
+          <Image
+            src="https://picsum.photos/200" // dont forget to add this url in nextConfig
+            alt="method-2"
+            width={200}
+            height={200}
+          />
         </div>
 
         {/* Method: 3.>-------------------------------------------------------------------- */}
 
-        <div className='border  border-red-500'>
+        <div className='border border-red-500'>
           <picture>
-            <source srcSet="https://picsum.photos/400" type="image/jpg" />
+            <source srcSet="/image.png" type="image/jpg" />
             <img
-              src="https://picsum.photos/400"
+              src="/image.png" // replace with your image path
               alt="method-3"
-              width={200}
-              height={200}
+              width="200"
+              height="200"
             />
           </picture>
         </div>
 
         {/* Method: 4.>-------------------------------------------------------------------- */}
-        <div className='border  border-red-500'>
-          <Image
-            src="https://picsum.photos/200" // dont forget to add this url in nextConfig
-            alt="method-4"
-            width={200}  
-            height={200}  
-          />
+
+        <div className='border border-red-500'>
+          <picture>
+            <source srcSet="https://picsum.photos/200" type="image/jpg" />
+            <img
+              src="https://picsum.photos/200" // dont forget to add this url in nextConfig
+              alt="method-4"
+              width={200}
+              height={200}
+            />
+          </picture>
         </div>
+        {/* -------------------------------------------------------------------------------- */}
       </div>
     </>
   );
